@@ -1,0 +1,16 @@
+def maxRepeating(sequence,word):
+        i = 0
+        j = 0
+        count = 0
+        if sequence == word:
+            return 1
+        while (j < len(word)):
+            j += 1
+
+        while (j < len(sequence)):
+            if sequence[i:j] == word:
+                count += 1
+            i += 1
+            j += 1
+        return count
+        
